@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>content</key>
+  <string>has_many_attached :${1:name}</string>
+  <key>name</key>
+  <string>has_many_attached</string>
+  <key>scope</key>
+  <string>meta.rails.model</string>
+  <key>tabTrigger</key>
+  <string>hma</string>
+  <key>uuid</key>
+  <string>206AA323-01DC-4CDC-8E11-EAC6E58C1D9C</string>
+</dict>
+</plist>
