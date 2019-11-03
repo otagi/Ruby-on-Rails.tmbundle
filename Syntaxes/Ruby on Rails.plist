@@ -80,9 +80,9 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(^\s*)(?=class\s+(([.a-zA-Z0-9_:]+(\s*&lt;\s*ActionMailer::Base))))</string>
+			<string>(^\s*)(?=class\s+(([.a-zA-Z0-9_:]+(\s*&lt;\s*(ActionMailer::Base|ApplicationMailer)))))</string>
 			<key>comment</key>
-			<string>Uses lookahead to match classes that inherit from ActionMailer::Base; includes 'source.ruby' to avoid infinite recursion</string>
+			<string>Uses lookahead to match classes that inherit from ActionMailer::Base or ApplicationMailer; includes 'source.ruby' to avoid infinite recursion</string>
 			<key>end</key>
 			<string>^\1(?=end)\b</string>
 			<key>name</key>
@@ -101,9 +101,9 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(^\s*)(?=class\s+.+ActiveRecord::Base)</string>
+			<string>(^\s*)(?=class\s+.+(ActiveRecord::Base|ApplicationRecord))</string>
 			<key>comment</key>
-			<string>Uses lookahead to match classes that (may) inherit from ActiveRecord::Base; includes 'source.ruby' to avoid infinite recursion</string>
+			<string>Uses lookahead to match classes that (may) inherit from ActiveRecord::Base or ApplicationRecord; includes 'source.ruby' to avoid infinite recursion</string>
 			<key>end</key>
 			<string>^\1(?=end)\b</string>
 			<key>name</key>
